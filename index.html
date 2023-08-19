@@ -10,10 +10,35 @@
 
     <body>
         <header>
-            <div></div>
-            <div><span #time-left></div>
+            <div><a href="#high-scores">View High Scores</a></div>
+            <div><span #time-left>Time: </span><span id="time-left">0</span></div>
         </header>
         
+        <section class="content">
+            <div class="intro">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nisi pariatur aut. Blanditiis quia a, dicta laborum nesciunt, voluptate ipsam provident, aut autem inventore saepe quidem! Dolorum exercitationem quaerat similique.</p>
+                <button id="start-game">Start</button>
+            </div>
+            <div class="question hidden">
+                <h1>Question <span class="question-number"></span></h1>
+                <p class="question-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nisi pariatur aut. Blanditiis quia a, dicta laborum nesciunt, voluptate ipsam provident, aut autem inventore saepe quidem! Dolorum exercitationem quaerat similique.</p>
+                <!-- li*4 -->
+                <!-- li{Choice $}*4 --> 
+                <ul>
+                    <li class="choice-1">Choice 1</li>
+                    <li class="choice-2">Choice 2</li>
+                    <li class="choice-3">Choice 3</li>
+                    <li class="choice-4">Choice 4</li>
+                </ul>
+                <p class="question-feedback"></p>
+            </div>
+            <div class="outro hidden">
+                ...
+            </div>
+
+        </section>
+        <script src="./assets/js/script.js"></script>
     </body>
 
 
