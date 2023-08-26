@@ -35,13 +35,29 @@ var questions = [
         correctChoice: 2
     },
     {
-        questionText: "What language affects styling on a webpage?",
-        choice1:"CSS",
-        choice2:"HTML",
-        choice3:"Javascript",
-        choice4:"C++",
+        questionText: "Commonly used data types do NOT include:",
+        choice1:"booleans",
+        choice2:"alerts",
+        choice3:"numbers",
+        choice4:"strings",
         correctChoice: 1
-    }
+    },
+    {
+        questionText: "String values are enclosed within:",
+        choice1:"Semi-Colons",
+        choice2:"Paranthesis",
+        choice3:"Quotes",
+        choice4:"Commas",
+        correctChoice: 3
+    },
+    {
+        questionText: "Arrays in JavaScript can be used to store:",
+        choice1:"Numbers and strings",
+        choice2:"Booleans",
+        choice3:"Other Arrays",
+        choice4:"All of the above",
+        correctChoice: 4
+    },
 ]
 
 // Click event listenen
@@ -68,6 +84,11 @@ var questions = [
 
 function showQuestion() {
     var i = counter;
+    if(counter===questions.length) {
+        questionDiv.classList.add("hidden") 
+        outroDiv.classList.remove("hidden")
+        return;
+    }
     questionNum.textContent = i+1;
     questionText.textContent = questions[i].questionText
     choiceLi1.textContent = questions[i].choice1
