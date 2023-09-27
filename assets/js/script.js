@@ -12,6 +12,8 @@ var choiceLi1 = document.querySelector(".choice-1");
 var choiceLi2 = document.querySelector(".choice-2");
 var choiceLi3 = document.querySelector(".choice-3");
 var choiceLi4 = document.querySelector(".choice-4");
+var score = 0
+var secondsLeft = 50
 
 // Get correct choice of first question:
 // questions[0].correctChoice
